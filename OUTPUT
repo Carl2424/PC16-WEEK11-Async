@@ -1,0 +1,48 @@
+===== TESTING KIOSK 1 (ASYNC DEMO) ====
+----------------------------------------
+Kiosk ID: K-101 
+Location: 1 
+Status: ONLINE
+Items in Cart: 0 
+Revenue Today: ₱0.00
+----------------------------------------
+[K-101] Added "Combo 1 (Burger + Fries + Iced Tea)" (₱149.00).
+[K-101] Added "Sundae" (₱40.00).
+Subtotal: ₱189.00
+▶ [MAIN ENGINE]: Sending checkout request to background server...
+[K-101] 📡 Contacting payment server for ₱189.00...
+[K-101] ✅ Payment approved by bank server!
+[K-101] Paid: ₱189.00
+[K-101] 📲 Digital receipt sent to lobby Screen #1.
+▶ [MAIN ENGINE]: Kiosk 1 transaction completely finished.
+----------------------------------------
+Kiosk ID: K-101 
+Location: 1 
+Status: ONLINE
+Items in Cart: 0 
+Revenue Today: ₱189.00
+----------------------------------------
+
+==== TESTING KIOSK 2 (ASYNC DRIVE-THRU) ====
+[K-102] Added "Combo 2 (Burger + Sundae)" (₱108.00).
+[K-102] "Pizza" not on menu.
+[K-102] Added "Iced Coffee" (₱70.00).
+[K-102] Added "Burger" (₱78.00).
+▶ [MAIN ENGINE]: Sending Drive-Thru checkout request...
+🔊 [AUDIO SYSTEM]: "Vehicle detected at Lane 2. Processing payment..."
+[K-102] 📡 Contacting payment server for ₱256.00...
+[K-102] ✅ Payment approved by bank server!
+[K-102] Paid: ₱256.00
+[K-102] 🚗 Printed Drive-Thru slip for Window #2.
+▶ [MAIN ENGINE]: Kiosk 2 transaction completely finished.
+----------------------------------------
+Kiosk ID: K-102 
+Location: 2 
+Status: ONLINE
+Items in Cart: 0 
+Revenue Today: ₱256.00
+----------------------------------------
+
+====== BRANCH KIOSK REPORT ======
+Kiosk K-101 (1): Revenue = ₱189.00
+Kiosk K-102 (2): Revenue = ₱256.00
